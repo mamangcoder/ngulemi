@@ -1,0 +1,51 @@
+1. Data Pemesan
+Nama Pemesan: [Text Field]
+Email: [Email Field]
+Nomor Telepon: [Number Field]
+Alamat: [Text Area]
+
+2. Paket Undangan
+Pilih Paket Undangan: [Dropdown Menu]
+Paket Basic
+Paket Standard
+Paket Premium
+Tema Undangan: [Dropdown Menu / Text Field]
+Tema yang sudah tersedia
+Custom Tema (Tuliskan Deskripsi)
+Tambahan Fitur (Opsional): [Checkbox Group]
+Musik Latar
+Buku Tamu Digital
+Countdown Timer
+Fitur RSVP
+
+3. Data Pengantin Pria
+Nama Lengkap: [Text Field]
+Nama Panggilan: [Text Field]
+Tempat, Tanggal Lahir: [Text Field]
+Media Sosial (Opsional): [Text Field]
+Foto Pengantin Pria: [File Upload]
+
+4. Data Pengantin Wanita
+Nama Lengkap: [Text Field]
+Nama Panggilan: [Text Field]
+Tempat, Tanggal Lahir: [Text Field]
+Media Sosial (Opsional): [Text Field]
+Foto Pengantin Wanita: [File Upload]
+
+5. Data Pernikahan
+Tanggal Pernikahan: [Date Picker]
+Waktu Akad Nikah: [Time Picker]
+Lokasi Akad Nikah: [Text Field]
+Waktu Resepsi: [Time Picker]
+Lokasi Resepsi: [Text Field]
+Peta Lokasi (Opsional): [Text Field / Link]
+
+6. Data Lainnya
+Ucapan Pembuka: [Text Area]
+(Contoh: "Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud...")
+Ucapan Penutup: [Text Area]
+(Contoh: "Atas kehadiran dan do'a restu Bapak/Ibu/Saudara/i, kami ucapkan terima kasih.")
+Daftar Orang Tua: [Text Area]
+(Contoh: "Bapak/Ibu Nama Ayah dan Ibu Pengantin Pria, Bapak/Ibu Nama Ayah dan Ibu Pengantin Wanita.")
+Foto-Foto (Opsional): [File Upload (Multiple)]
+Pesan Tambahan: [Text Area]
