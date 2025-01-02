@@ -1,11 +1,11 @@
-.section__flower-icon{
-    margin-bottom: 40px;
+.section__flower-icon {
+  margin-bottom: 40px;
 }
 
 .form-order {
   overflow-x: hidden;
   margin-top: -40px;
-  margin-bottom: 120px
+  margin-bottom: 120px;
 }
 
 .form-order h3 {
@@ -206,17 +206,17 @@
 }
 
 .form-order__link-undangan-domain {
-    font-weight: 500;
-    font-size: 20px;
-    background-color: #e9ecef;
-    padding: 16px;
-    margin-bottom: 20px;
-    border: 1px solid #ced4da;
-    border-radius: 0 10px 10px 0;
-    -webkit-border-radius: 0 10px 10px 0;
-    -moz-border-radius: 0 10px 10px 0;
-    -ms-border-radius: 0 10px 10px 0;
-    -o-border-radius: 0 10px 10px 0;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #e9ecef;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
 }
 
 .form-order__link-undangan-domain p {
@@ -224,9 +224,77 @@
   margin: 0;
 }
 
-.form-order__notes{
-    font-size: 16px;
-    font-weight: 400;
-    color: #495057;
-    margin-bottom: 20px;
+.form-order__notes {
+  font-size: 16px;
+  font-weight: 400;
+  color: #495057;
+  margin-bottom: 20px;
+}
+
+.price_diskon {
+  display: flex;
+}
+
+.harga__normal {
+  font-size: 24px;
+  font-weight: 500;
+  color: #495057;
+  padding: 6px 12px;
+  text-decoration: line-through;
+}
+
+.persentase_diskon {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 6px 12px;
+  background-color: #cf7745;
+}
+
+.harga__diskon {
+  font-size: 36px;
+  font-weight: 500;
+  color: #495057;
+  padding: 6px 12px;
+}
+
+.harga__banner {
+  background-color: #f8f9fa;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.harga__banner h4 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.harga__fitur {
+  padding: 40px;
+}
+
+.harga__fitur ul {
+  list-style-type: none !important;
+  padding: 0;
+}
+
+.harga__fitur ul li {
+  display: flex;
+  align-self: center;
+  align-content: center;
+}
+
+.harga__fitur ul li img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.harga__fitur ul li p {
+  margin: 0;
+  font-size: 20px;
 }
