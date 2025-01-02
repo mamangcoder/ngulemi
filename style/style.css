@@ -297,4 +297,95 @@
 .harga__fitur ul li p {
   margin: 0;
   font-size: 20px;
+=======
+/* ========================================== Tema Page ========================================== */
+.tema__layout{
+    margin-bottom: 100px;
+}
+
+.tema__item {
+  border: none;
+  padding: 0;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.tema__content img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  -webkit-border-radius: 15px 15px 0 0;
+  -moz-border-radius: 15px 15px 0 0;
+  -ms-border-radius: 15px 15px 0 0;
+  -o-border-radius: 15px 15px 0 0;
+}
+
+.tema__info {
+  padding: 20px 12px;
+  border: 1px solid #e9ecef;
+}
+
+.tema__button-demo {
+  background-color: #fff;
+  color: #cf7745;
+  border: 1px solid #cf7745;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+}
+
+.tema__button-demo:hover {
+  background-color: #fff;
+  color: #cf7745;
+  opacity: 0.8;
+  border: 1px solid #cf7745;
+  width: 100%;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+}
+
+.tema__button-pilih {
+  background-color: #cf7745;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+}
+
+.tema__button-pilih:hover {
+  background-color: #cf7745;
+  opacity: 0.8;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
 }

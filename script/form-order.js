@@ -28,6 +28,13 @@ $(document).ready(function () {
         }
     });
 
+    const params = new URLSearchParams(window.location.search);
+    const template = params.get('template');
+
+    if (template) {
+        $("#temaUndangan").val(template);
+    }
+
     $(".form-order").on("submit", function (e) {
         e.preventDefault();
 
@@ -37,7 +44,7 @@ $(document).ready(function () {
         var noHpPemesan = $("#noHpPemesan").val();
 
         // Tema Undangan
-        var temaUndangan = $("#temaUndangan").val();
+        let temaUndangan = $("#temaUndangan").val();
         var kategoriUndangan = $("#kategoriUndangan").find(":selected").text();
         var linkUndangan = $("#linkUndangan").val();
 
@@ -47,6 +54,15 @@ $(document).ready(function () {
         var nameAyahPria = $("#nameAyahPria").val();
         var nameIbuPria = $("#nameIbuPria").val();
         var igPria = $("#igPria").val();
+
+        const params = new URLSearchParams(window.location.search);
+        const template = params.get('template');
+
+        if (template) {
+            temaUndangan = template;
+        } else {
+            temaUndangan = $("#temaUndangan").val();
+        }
 
         var message = `Halo, saya tertarik untuk memesan undangan digital di keundangankita.id. Berikut data terkait pesanan saya:\n\n` +
         `Data Pemesan: \n` +
