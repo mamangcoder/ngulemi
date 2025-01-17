@@ -11,7 +11,7 @@ $(document).ready(function () {
     var currentStep = 1;
 
     $(".next-step").click(function () {
-        if (currentStep < 3) {
+        if (currentStep < 6) {
             $(".step").hide();
             currentStep++;
             $(".step-" + currentStep).show();
@@ -88,7 +88,8 @@ $(document).ready(function () {
     });
 
     function updateProgressBar() {
-        var progressPercentage = ((currentStep - 1) / 2) * 100;
+        var totalSteps = 6;
+        var progressPercentage = ((currentStep - 1) / (totalSteps - 1)) * 100;
         $(".progress-bar").css("width", progressPercentage + "%");
     }
 });

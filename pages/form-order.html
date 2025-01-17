@@ -34,18 +34,22 @@
 </head>
 
 <body class="form-order-page">
-    <header id="header" class="header fixed-top">
+    <header id="header" class="header fixed-top" style="background-color: #F5F6F3;">
         <div class="branding d-flex align-items-cente">
             <div class="container position-relative d-flex align-items-center justify-content-between">
-                <a href="../index.html" class="logo d-flex align-items-center">
-                    <img src="../assets/img/image.png" alt="logo undangan">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <img src="../assets/img/logo-baru.png" alt="logo undangan">
                 </a>
                 <nav id="navmenu" class="navmenu">
-                    <ul>
-                        <li><a href="../index.html">Home<br></a></li>
-                        <li><a href="./harga.html">Harga</a></li>
-                        <li><a href="./tema.html">Tema</a></li>
-                        <li><a href="#">Form Order</a></li>
+                    <ul style="color: #073126;">
+                        <li><a href="../index.html" style="color: #073126;">Home<br></a></li>
+                        <li><a href="../index.html#fiturs" style="color: #073126;">Fitur<br></a></li>
+                        <li><a href="../index.html#harga" style="color: #073126;">Harga</a></li>
+                        <li><a href="./tema.html" style="color: #073126;">Tema</a></li>
+                        <li><a href="../index.html#langkah" style="color: #073126;">Tutorial</a></li>
+                        <li><a href="../index.html#recent-posts" style="color: #073126;">Blog</a></li>
+                        <li><a href="../index.html#faq" style="color: #073126;">FAQ</a></li>
+                        <li><a href="#" style="color: #073126;">Form Order</a></li>
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
@@ -97,7 +101,7 @@
                     <span>3</span>
                     <p>Data Pengantin Pria</p>
                 </div>
-                <!-- <div class="step-circle" onclick="displayStep(4)">
+                <div class="step-circle" onclick="displayStep(4)">
                     <span>4</span>
                     <p>Data Pengantin Wanita</p>
                 </div>
@@ -108,7 +112,7 @@
                 <div class="step-circle" onclick="displayStep(6)">
                     <span>6</span>
                     <p>Data Lainnya</p>
-                </div> -->
+                </div>
             </div>
 
             <form class="form-order" id="multi-step-form">
@@ -217,6 +221,128 @@
                             placeholder="Username Akun Instagram Pengantin Pria">
                     </div>
                     <button type="button" class="btn form-order__btn-previous prev-step">Previous</button>
+                    <button type="button" class="btn form-order__btn-next next-step">Next</button>
+                </div>
+
+                <div class="step step-4">
+                    <h3>Data Pengantin Wanita</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama Lengkap Pengantin Pria</label>
+                                <input type="text" class="form-control" id="namaPengantinPria" name="namaPengantinPria"
+                                    placeholder="Nama Lengkap Pengantin Pria">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama Panggilan Pengantin Pria</label>
+                                <input type="text" class="form-control" id="namePanggilanPria" name="namePanggilanPria"
+                                    placeholder="Nama Panggilan Pengantin Pria">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama Ayah Pengantin Pria</label>
+                                <input type="text" class="form-control" id="nameAyahPria" name="nameAyahPria"
+                                    placeholder="Nama Ayah Pengantin Pria">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama Ibu Pengantin Pria</label>
+                                <input type="text" class="form-control" id="nameIbuPria" name="nameIbuPria"
+                                    placeholder="Nama Ibu Pengantin Pria">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Username Akun Instagram Pengantin Ptia</label>
+                        <input type="text" class="form-control" id="igPria" name="igPria"
+                            placeholder="Username Akun Instagram Pengantin Pria">
+                    </div>
+                                        <button type="button" class="btn form-order__btn-previous prev-step">Previous</button>
+                                        <button type="button" class="btn form-order__btn-next next-step">Next</button>
+
+                </div>
+
+                <div class="step step-5">
+                    <h3>Tema Undangan</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="tema" class="form-label">Pilihan Template Undangan</label>
+                                <input type="text" class="form-control" id="temaUndangan" name="temaUndangan"
+                                    placeholder="Pilihan Template Undangan">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="theme" class="form-label">Kategori Undangan</label>
+                            <select class="form-select" id="kategoriUndangan" name="kategoriUndangan">
+                                <option selected>Pilih Kategori</option>
+                                <option value="pernikahan">Pernikahan</option>
+                                <option value="ulangtahun">Ulang Tahun</option>
+                                <option value="aqiqah">Aqiqah</option>
+                                <option value="seminar">Seminar/Webinar</option>
+                                <option value="pesta">Pesta</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Link Undangan</label>
+                        <div class="form-order__link-undangan">
+                            <input class="form-control" id="linkUndangan" name="linkUndangan" type="text"
+                                placeholder="Contoh: fauzan-siti" />
+                            <div class="form-order__link-undangan-domain">
+                                <p>.keundangankita.id</p>
+                            </div>
+                        </div>
+                        <p class="form-order__notes">Buat link undangan yang unik dan tidak terlalu panjang dengan
+                            menggunakan huruf kecil dan tanpa spasi.</p>
+                    </div>
+                    <button type="button" class="btn form-order__btn-previous prev-step">Previous</button>
+                    <button type="button" class="btn form-order__btn-next next-step">Next</button>
+                </div>
+
+                <div class="step step-6">
+                    <h3>Tema Undangan</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="tema" class="form-label">Pilihan Template Undangan</label>
+                                <input type="text" class="form-control" id="temaUndangan" name="temaUndangan"
+                                    placeholder="Pilihan Template Undangan">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="theme" class="form-label">Kategori Undangan</label>
+                            <select class="form-select" id="kategoriUndangan" name="kategoriUndangan">
+                                <option selected>Pilih Kategori</option>
+                                <option value="pernikahan">Pernikahan</option>
+                                <option value="ulangtahun">Ulang Tahun</option>
+                                <option value="aqiqah">Aqiqah</option>
+                                <option value="seminar">Seminar/Webinar</option>
+                                <option value="pesta">Pesta</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Link Undangan</label>
+                        <div class="form-order__link-undangan">
+                            <input class="form-control" id="linkUndangan" name="linkUndangan" type="text"
+                                placeholder="Contoh: fauzan-siti" />
+                            <div class="form-order__link-undangan-domain">
+                                <p>.keundangankita.id</p>
+                            </div>
+                        </div>
+                        <p class="form-order__notes">Buat link undangan yang unik dan tidak terlalu panjang dengan
+                            menggunakan huruf kecil dan tanpa spasi.</p>
+                    </div>
+                    <button type="button" class="btn form-order__btn-previous prev-step">Previous</button>
                     <button type="submit" class="btn form-order__btn-success">Submit</button>
                 </div>
             </form>
@@ -231,12 +357,14 @@
                         <img src="../assets/img/image.png" alt="logo undangan">
                         <span class="sitename">Keundangankita.id</span>
                     </a>
-                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex repudiandae officia
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                        ex repudiandae officia
                         nostrum soluta, ducimus porro consectetur libero aliquid sint doloribus exercitationem,
                         excepturi architecto quia facere? Rerum cupiditate earum blanditiis.</p>
                     <div class="social-links d-flex mt-4">
                         <a href="https://www.instagram.com/razinsyakib_/"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/6281225536642?text=Halo, saya tertarik untuk memesan undangan digital di keundangankita.id." target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://wa.me/6281225536642?text=Halo, saya tertarik untuk memesan undangan digital di keundangankita.id."
+                            target="_blank"><i class="bi bi-whatsapp"></i></a>
                         <a href="https://www.facebook.com/groups/1032515944638255"><i class="bi bi-facebook"></i></a>
                         <a href="mailto:keundangankita@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
                     </div>
@@ -272,7 +400,8 @@
         </div>
 
         <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright 2025</span> <strong class="px-1 sitename">Keundangankita.id</strong> <span>All Rights Reserved</span>
+            <p>© <span>Copyright 2025</span> <strong class="px-1 sitename">Keundangankita.id</strong> <span>All Rights
+                    Reserved</span>
             </p>
         </div>
 
@@ -285,8 +414,8 @@
     <!-- Preloader -->
     <div id="preloader"></div>
 
+    <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="../script/form-order.js"></script>
 
     <!-- Vendor JS Files -->
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -299,6 +428,7 @@
     <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
     <!-- Main JS File -->
+    <script src="../script/form-order.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>
 
