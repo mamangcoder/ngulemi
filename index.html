@@ -28,21 +28,24 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="./style/style.css">
+
+  <!-- Swiper JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="index-page">
-  <header id="header" class="header fixed-top">
+  <header id="header" class="header fixed-top" style="background-color: #F5F6F3;">
     <div class="branding d-flex align-items-cente">
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
-          <img src="assets/img/image.png" alt="logo undangan">
+          <img src="assets/img/logo-baru.png" alt="logo undangan">
         </a>
         <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#">Home<br></a></li>
-            <li><a href="./pages/harga.html">Harga</a></li>
-            <li><a href="./pages/tema.html">Tema</a></li>
-            <li><a href="./pages/form-order.html">Form Order</a></li>
+          <ul style="color: #073126;">
+            <li><a href="#" style="color: #073126;">Home<br></a></li>
+            <li><a href="./pages/harga.html" style="color: #073126;">Harga</a></li>
+            <li><a href="./pages/tema.html" style="color: #073126;">Tema</a></li>
+            <li><a href="./pages/form-order.html" style="color: #073126;">Form Order</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -52,22 +55,22 @@
 
   <main class="main">
     <!-- Hero Section -->
-    <section id="hero" class="hero section accent-background">
+    <section id="heros" class="heros section">
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-5 justify-content-between">
+        <div class="row hero__row justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <h2>Buat Undangan Digital Website Online Pernikahan</h2>
             <p>Buat momen spesialmu semakin berkesan dengan undangan digital yang modern, mudah dibagikan, dan ramah
               lingkungan. Yuk, mulai sekarang!</p>
             <div class="d-flex">
-              <a href="https://wa.me/6285889726747" class="btn-get-started">Buat Undangan</a>
-              <a href="https://wa.me/6285889726747" class="btn-get-started">Lihat Contoh Undangan</a>
+              <a href="https://wa.me/6285889726747" class="hero__btn">Buat Undangan</a>
+              <a href="https://wa.me/6285889726747" class="hero__btn-lihat-undangan">Lihat Contoh Undangan</a>
               <!-- <a href="" class="cta">Beli Sekarang</a> -->
               <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
             </div>
           </div>
           <div class="col-lg-5 order-1 order-lg-2">
-            <img src="assets/img/hero-img.svg" class="img-fluid" alt="">
+            <img src="assets/img/hero.svg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -76,11 +79,15 @@
     <!-- Kenapa Harus Memilih Keundangankita.id? -->
     <section id="alasan" class="alasan">
       <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>Kenapa Harus Memilih Keundangankita.id?</h2>
-          <p>Keundangankita.id adalah solusi undangan digital yang modern, praktis, dan ramah lingkungan. Berikut adalah
-            beberapa alasan mengapa Anda harus memilih Keundangankita.id.</p>
-        </div>
+        <!-- Section Title -->
+        <div class="container title__section" data-aos="fade-up">
+          <h2 class="title__section-title">Kenapa Harus Memilih Keundangankita.id?</h2>
+          <section class="title__section-desc-section">
+            <p class="title__section-desc">Keundangankita.id adalah solusi undangan digital yang modern, praktis, dan
+              ramah lingkungan. Berikut adalah
+              beberapa alasan mengapa Anda harus memilih Keundangankita.id.</p>
+          </section>
+        </div><!-- End Section Title -->
         <div class="row gy-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="alasan-item">
@@ -345,44 +352,51 @@
     </section><!-- /Pilihan Tema Section -->
 
     <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
+    <section id="harga" class="harga section">
       <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>Harga Terjangkau untuk Semua Fitur Premium!</h2>
-          <p>Dengan hanya 75K, Anda sudah mendapatkan semua fitur premium tanpa batasan. Kami percaya bahwa momen
-            spesial tak perlu
-            mahal untuk berkesan.</p>
-        </div>
-        <div class="harga row" data-aos="fade-up" data-aos-delay="100">
+        <!-- Section Title -->
+        <div class="container title__section" data-aos="fade-up">
+          <h2 class="title__section-title">Harga Terjangkau untuk Semua Fitur Premium!</h2>
+          <section class="title__section-desc-section">
+            <p class="title__section-desc">Dengan hanya 75K, Anda sudah mendapatkan semua fitur premium tanpa batasan.
+              Kami percaya bahwa momen
+              spesial tak perlu
+              mahal untuk berkesan.</p>
+          </section>
+        </div><!-- End Section Title -->
+        <div class="harga__card row" data-aos="fade-up" data-aos-delay="100">
           <div class="harga__banner col-lg-4 ">
             <img src="./assets/img/icons/Flower-Harga.svg" alt="">
-            <h4>All in Hemat</h4>
+            <h3 class="harga__paket">Paket All-in-One Premium</h3>
             <div class="price_diskon">
-              <p class="harga__normal">Rp. 120.000</p>
+              <p class="harga__normal">Rp. 100.000</p>
               <p class="persentase_diskon">Diskon 75%</p>
             </div>
             <p class="harga__diskon">Rp. 75.000</p>
-            <a href="https://wa.me/6285889726747" class="btn-get-started">Buat Undangan</a>
-            <p class="">*Harga sudah termasuk biaya desain dan hosting</p>
+            <a href="https://wa.me/6285889726747" class="harga__btn">Buat Undangan</a>
+            <p class="harga__keterangan">*Harga sudah termasuk semua fitur premium, desain, dan hosting tanpa biaya tambahan!</p>
           </div>
           <div class="harga__fitur col-lg-8">
             <div class="row">
-              <div class="col-lg-7">
+              <div class="col-lg-6">
                 <ul class="harga__fitur-list">
                   <li> <img src="./assets/img/icons/checkmark.svg" alt="">
                     <p>Custom Nama Tamu</p>
                   </li>
                   <li> <img src="./assets/img/icons/checkmark.svg" alt="">
-                    <p>Domain keundangankita (namaacara.keundangankita.id)</p>
+                    <p>Domain keundangankita <span>(namaacara.keundangankita.id)</span></p>
                   </li>
                   <li> <img src="./assets/img/icons/checkmark.svg" alt="">
                     <p>Unlimited Tamu</p>
                   </li>
                   <li> <img src="./assets/img/icons/checkmark.svg" alt="">
-                    <p>Informasi Acara</p>
+                    <p>10-15 Foto</p>
                   </li>
                   <li> <img src="./assets/img/icons/checkmark.svg" alt="">
                     <p>Profil</p>
+                  </li>
+                  <li> <img src="./assets/img/icons/checkmark.svg" alt="">
+                    <p>Informasi Acara</p>
                   </li>
                   <li> <img src="./assets/img/icons/checkmark.svg" alt="">
                     <p>Galeri Foto</p>
@@ -393,13 +407,35 @@
                   <li> <img src="./assets/img/icons/checkmark.svg" alt="">
                     <p>Ucapan dan Doa</p>
                   </li>
+                  <li> <img src="./assets/img/icons/checkmark.svg" alt="">
+                    <p>Galeri Foto</p>
+                  </li>
+                  <li> <img src="./assets/img/icons/checkmark.svg" alt="">
+                    <p>Countdown Timer</p>
+                  </li>
                 </ul>
               </div>
-              <div class="col-lg-5">
+              <div class="col-lg-6">
                 <ul class="harga__fitur-list">
                   <li> <img src="./assets/img/icons/checkmark.svg" alt="">
-                    <p></p>
+                    <p>Form RSVP & Buku Tamu</p>
                   </li>
+                  <li> <img src="./assets/img/icons/checkmark.svg" alt="">
+                    <p>Navigasi Google Maps</span></p>
+                  </li>
+                  <li> <img src="./assets/img/icons/checkmark.svg" alt="">
+                    <p>Gift</p>
+                  </li>
+                  <li> <img src="./assets/img/icons/checkmark.svg" alt="">
+                    <p>Kirim WA dengan Satu Klik</p>
+                  </li>
+                  <li> <img src="./assets/img/icons/checkmark.svg" alt="">
+                    <p>Masa Aktif Selamanya</p>
+                  </li>
+                  <li> <img src="./assets/img/icons/checkmark.svg" alt="">
+                    <p>Masa Edit Data Tanpa Batas</p>
+                  </li>
+
                 </ul>
               </div>
             </div>
@@ -407,68 +443,123 @@
         </div>
     </section><!-- /Pricing Section -->
 
-    <!-- Langkah Membuat Undangan Digital Section-->
-    <section id="langkah-membuat-undangan" class="langkah-membuat-undangan section">
+    <!-- Step Membuat Undangan Digital Section-->
+    <section id="langkah" class="langkah section">
       <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>4 Langkah Membuat Undangan Digital</h2>
-          <p>Proses pembuatan undangan digital di Keundangankita.id sangat mudah dan cepat. Ikuti langkah-langkah
-            berikut
-            ini!</p>
-        </div>
-        <div class="row gy-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="langkah-item">
-              <div class="langkah-item__icon">
-                <img src="./assets/img/icons/step-1.svg" alt="">
+        <!-- Section Title -->
+        <div class="container title__section" data-aos="fade-up">
+          <h2 class="title__section-title">4 Langkah Membuat Undangan Digital</h2>
+          <section class="title__section-desc-section">
+            <p class="title__section-desc">Proses pembuatan undangan digital di Keundangankita.id sangat mudah dan
+              cepat. Cukup lakukan 4 langkah dibawah ini</p>
+          </section>
+        </div><!-- End Section Title -->
+        <div class="row gy-4 d-none d-md-flex">
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="langkah__item">
+              <h3 class="langkah__title">1. Pilih Tema Favoritmu</h3>
+              <div class="langkah__item-icon">
+                <img src="./assets/img/step/days-icons.svg" alt="">
               </div>
-              <h3>Pilih Tema</h3>
-              <p>Pilih tema undangan yang sesuai dengan acara Anda. Kami menyediakan berbagai pilihan tema yang menarik
-                dan elegan.</p>
+              <p class="langkah__desc">Telusuri berbagai desain di halaman <a href="./pages/tema.html">Tema</a> dan
+                pilih yang paling sesuai untuk acara spesialmu.</p>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="langkah-item">
-              <div class="langkah-item__icon">
-                <img src="./assets/img/icons/step-2.svg" alt="">
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="langkah__item">
+              <h3 class="langkah__title">2. Isi Informasi Acara</h3>
+              <div class="langkah__item-icon">
+                <img src="./assets/img/step/days-icons.svg" alt="">
               </div>
-              <h3>Customisasi</h3>
-              <p>Custom nama tamu, informasi acara, galeri foto, dan lainnya sesuai keinginan Anda. Tambahkan juga musik
-                latar yang sesuai.</p>
+              <p class="langkah__desc">Lengkapi detail seperti nama, waktu, lokasi, foto, dan video di halaman <a
+                  href="./pages/form-order.html">Form Order</a> dengan mudah.</p>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="langkah-item">
-              <div class="langkah-item__icon">
-                <img src="./assets/img/icons/step-3.svg" alt="">
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="langkah__item">
+              <h3 class="langkah__title">3. Konfirmasi Pembayaran</h3>
+              <div class="langkah__item-icon">
+                <img src="./assets/img/step/days-icons.svg" alt="">
               </div>
-              <h3>Request Desain</h3>
-              <p>Request desain undangan digital Anda kepada tim desain kami. Tim kami akan membantu Anda membuat desain
-                undangan yang menarik dan elegan.</p>
+              <p class="langkah__desc">Setelah submit, Anda akan diarahkan ke WhatsApp untuk mengirim detail pesanan ke
+                admin Keundangankita.id dan melakukan
+                pembayaran.</p>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="langkah-item">
-              <div class="langkah-item__icon">
-                <img src="./assets/img/icons/step-4.svg" alt="">
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="langkah__item">
+              <h3 class="langkah__title">4. Bagikan ke Tamu</h3>
+              <div class="langkah__item-icon">
+                <img src="./assets/img/step/days-icons.svg" alt="">
               </div>
-              <h3>Undangan Digital</h3>
-              <p>Undangan digital Anda siap digunakan. Undangan digital dapat diakses melalui website kami atau melalui
-                link yang kami sediakan.</p>
+              <p class="langkah__desc">Undangan digitalmu akan segera siap dan bisa dibagikan ke tamu melalui WhatsApp,
+                media sosial, atau email.</p>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="swiper d-md-none">
+        <div class="swiper-wrapper mb-5">
+          <div class="swiper-slide">
+            <div class="langkah__item">
+              <h3 class="langkah__title">1. Pilih Tema Favoritmu</h3>
+              <div class="langkah__item-icon">
+                <img src="./assets/img/step/days-icons.svg" alt="">
+              </div>
+              <p class="langkah__desc">Telusuri berbagai desain di halaman <a href="./pages/tema.html">Tema</a> dan
+                pilih yang paling sesuai untuk acara spesialmu.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="langkah__item">
+              <h3 class="langkah__title">1. Pilih Tema Favoritmu</h3>
+              <div class="langkah__item-icon">
+                <img src="./assets/img/step/days-icons.svg" alt="">
+              </div>
+              <p class="langkah__desc">Telusuri berbagai desain di halaman <a href="./pages/tema.html">Tema</a> dan
+                pilih yang paling sesuai untuk acara spesialmu.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="langkah__item">
+              <h3 class="langkah__title">1. Pilih Tema Favoritmu</h3>
+              <div class="langkah__item-icon">
+                <img src="./assets/img/step/days-icons.svg" alt="">
+              </div>
+              <p class="langkah__desc">Telusuri berbagai desain di halaman <a href="./pages/tema.html">Tema</a> dan
+                pilih yang paling sesuai untuk acara spesialmu.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="langkah__item">
+              <h3 class="langkah__title">1. Pilih Tema Favoritmu</h3>
+              <div class="langkah__item-icon">
+                <img src="./assets/img/step/days-icons.svg" alt="">
+              </div>
+              <p class="langkah__desc">Telusuri berbagai desain di halaman <a href="./pages/tema.html">Tema</a> dan
+                pilih yang paling sesuai untuk acara spesialmu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
     </section><!-- /4 Langkah Membuat Undangan Digital Section -->
 
     <!-- Metode Pembayaran Section -->
     <section id="metode-pembayaran" class="metode-pembayaran section">
       <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>Metode Pembayaran</h2>
-          <p>Kami menyediakan berbagai metode pembayaran yang mudah dan aman. Pilih metode pembayaran yang sesuai dengan
-            Anda.</p>
-        </div>
+        <!-- Section Title -->
+        <div class="container title__section" data-aos="fade-up">
+          <h2 class="title__section-title">Metode Pembayaran</h2>
+          <section class="title__section-desc-section">
+            <p class="title__section-desc">Kami menyediakan berbagai metode pembayaran yang mudah dan aman. Pilih metode
+              pembayaran yang sesuai
+              dengan
+              Anda.</p>
+          </section>
+        </div><!-- End Section Title -->
         <div class="row gy-4">
           <div class="col-lg-1 col-md-2 col-3" data-aos="fade-up" data-aos-delay="100">
             <div class="metode-pembayaran-item">
@@ -537,10 +628,13 @@
     <!-- Recent Posts Section -->
     <section id="recent-posts" class="recent-posts section">
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Artikel Terbaru</h2>
-        <p>Dapatkan ide-ide menarik dan tips berguna untuk membuat acara Anda lebih istimewa. Jelajahi artikel terbaru
-          kami!</p>
+      <div class="container title__section" data-aos="fade-up">
+        <h2 class="title__section-title">Artikel Terbaru</h2>
+        <section class="title__section-desc-section">
+          <p class="title__section-desc">Dapatkan ide-ide menarik dan tips berguna untuk membuat acara Anda lebih
+            istimewa. Jelajahi artikel terbaru
+            kami!</p>
+        </section>
       </div><!-- End Section Title -->
       <div class="container">
         <div class="row gy-4">
@@ -593,9 +687,11 @@
       <div class="container title__section" data-aos="fade-up">
         <h2 class="title__section-title">FAQ (Frequently Asked Questions)</h2>
         <section class="title__section-desc-section">
-          <p class="title__section-desc">Temukan jawaban untuk pertanyaan yang paling sering ditanyakan tentang Keundangankita.id. Mulai dari harga, fitur,
-          hingga cara penggunaan, semua informasi yang Anda butuhkan tersedia di sini untuk memberikan pengalaman terbaik dalam
-          membuat undangan digital.</p>
+          <p class="title__section-desc">Temukan jawaban untuk pertanyaan yang paling sering ditanyakan tentang
+            Keundangankita.id. Mulai dari harga, fitur,
+            hingga cara penggunaan, semua informasi yang Anda butuhkan tersedia di sini untuk memberikan pengalaman
+            terbaik dalam
+            membuat undangan digital.</p>
         </section>
       </div><!-- End Section Title -->
       <div class="container">
@@ -799,6 +895,35 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    // Inisialisasi Swiper
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+
 
 </body>
 
