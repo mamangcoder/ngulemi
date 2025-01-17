@@ -1,5 +1,42 @@
-.section__flower-icon {
-  margin-bottom: 40px;
+:root {
+  --primary-color: #F5F6F3;
+  --secondary-color: #073126;
+  --darker-color: #101C1C;
+  --text-color: #CEF808;
+  --grey-color: #EBEDE8;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+main{
+    background-color: var(--primary-color);
+}
+
+/* General */
+.title__section {
+  text-align: center;
+  position: relative;
+}
+
+.title__section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.title__section-desc-section {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.title__section-desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: #495057;
+  margin-bottom: 48px;
 }
 
 .form-order {
@@ -26,6 +63,10 @@
   border: 1px solid #adb5bd;
   border-radius: 5px;
   font-size: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 ::placeholder {
@@ -37,6 +78,175 @@
   color: #adb5bd;
 }
 
+/* ============================ Home ============================ */
+/* heros Section */
+.hero__btn{
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 16px 32px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.hero__btn:hover {
+  opacity: 0.8;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.hero__btn-lihat-undangan{
+  background-color: white;
+  color: var(--secondary-color);
+  padding: 16px 32px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.hero__btn-lihat-undangan:hover {
+  opacity: 0.8;
+  background-color: white;
+  color: var(--secondary-color);
+}
+
+.heros {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  padding: 140px 0 0 0;
+}
+
+.hero__row{
+  display: flex;
+}
+
+.heros .container {
+  position: relative;
+  z-index: 3;
+}
+
+.heros h2 {
+  color: #131010;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+.heros p {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 640px) {
+  .heros h2 {
+    font-size: 36px;
+  }
+
+  .heros .btn-get-started,
+  .heros .btn-watch-video {
+    font-size: 14px;
+  }
+}
+
+.heros .icon-boxes {
+  padding-bottom: 60px;
+  z-index: 4;
+}
+
+@media (min-width: 1200px) {
+  .heros .icon-boxes:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(50% + 20px);
+    background-color: var(--default-color);
+    border-top: 1px solid
+      color-mix(in srgb, var(--default-color), transparent 90%);
+  }
+}
+
+.heros .icon-box {
+  padding: 60px 30px;
+  position: relative;
+  overflow: hidden;
+  background: var(--background-color);
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.heros .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.heros .icon-box .title a {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  transition: 0.3s;
+}
+
+.heros .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 48px;
+  line-height: 1;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.heros .icon-box:hover {
+  background-color: color-mix(in srgb, var(--background-color), white 10%);
+}
+
+.heros .icon-box:hover .title a,
+.heros .icon-box:hover .icon {
+  color: var(--contrast-color);
+}
+
+.alasan{
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+/* ============================ Form Order ============================ */
 .step {
   display: none;
 }
@@ -235,8 +445,18 @@
   display: flex;
 }
 
+.harga__paket{
+  font-size: 28px;
+  font-weight: 700;
+  color: #495057;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 6px 12px;
+  text-align: center;
+}
+
 .harga__normal {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   color: #495057;
   padding: 6px 12px;
@@ -244,7 +464,7 @@
 }
 
 .persentase_diskon {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: #fff;
   padding: 6px 12px;
@@ -252,10 +472,21 @@
 }
 
 .harga__diskon {
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 500;
   color: #495057;
   padding: 6px 12px;
+}
+
+/* Harga Section */
+.harga__card{
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .harga__banner {
@@ -265,6 +496,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .harga__banner h4 {
@@ -274,60 +510,112 @@
   margin-bottom: 20px;
 }
 
+.harga__btn{
+  background-color: #659287;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+}
+
+.harga__btn:hover {
+  background-color: #B1C29E;
+  opacity: 0.8;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+}
+
+.harga__keterangan {
+  font-size: 20px !important;
+  font-weight: 400;
+  color: #495057;
+  margin-top: 20px;
+}
+
 .harga__fitur {
   padding: 40px;
 }
 
 .harga__fitur ul {
   list-style-type: none !important;
-  padding: 0;
+  padding: 0
 }
 
 .harga__fitur ul li {
   display: flex;
-  align-self: center;
-  align-content: center;
+  align-items: flex-start;
+  margin-bottom: 24px;
 }
 
 .harga__fitur ul li img {
-  width: 20px;
-  margin-right: 10px;
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 20px;
 }
 
 .harga__fitur ul li p {
-  margin: 0;
   font-size: 20px;
+  line-height: 20px;
+  margin: 0;
 }
+
+.harga__fitur ul li span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #495057;
+}
+
 /* ========================================== Tema Page ========================================== */
-.tema__layout{
-    margin-bottom: 100px;
+.tema__layout {
+  margin-bottom: 100px;
 }
 
 .tema__item {
   border: none;
   padding: 0;
-  border-radius: 15px;
   margin-bottom: 20px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+}
+
+.tema__content {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .tema__content img {
-  border-radius: 15px 15px 0 0;
   width: 100%;
   height: 50%;
   object-fit: cover;
-  -webkit-border-radius: 15px 15px 0 0;
-  -moz-border-radius: 15px 15px 0 0;
-  -ms-border-radius: 15px 15px 0 0;
-  -o-border-radius: 15px 15px 0 0;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
 }
 
 .tema__info {
   padding: 20px 12px;
-  border: 1px solid #e9ecef;
+  /*border: 1px solid #e9ecef;*/
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
 }
 
 .tema__button-demo {
@@ -388,4 +676,109 @@
   -moz-transition: ease-in-out;
   -ms-transition: ease-in-out;
   -o-transition: ease-in-out;
+}
+
+.tema__button-all {
+  background-color: #cf7745;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+}
+
+.tema__button-all:hover {
+  background-color: #cf7745;
+  opacity: 0.8;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+}
+
+/* ========================================== Homepage Page ========================================== */
+/* Fitur Section */
+.fitur__item {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.fitur__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #cf7745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.fitur__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #495057;
+}
+
+.fitur__desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #495057;
+  margin-top: 16px;
+  text-align: justify;
+}
+
+/* FAQ Section */
+.accordion-item {
+  border: 0;
+  border-bottom: 1px solid #e9ecef;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.accordion-button {
+  font-size: 16px;
+  font-weight: 700;
+  color: #495057;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #cf7745;
+}
+
+.langkah__title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.langkah__desc{
+  font-size: 18px;
+  font-weight: 400;
+  color: #495057;
+  margin-top: 16px;
 }

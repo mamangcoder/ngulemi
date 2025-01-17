@@ -301,7 +301,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 72px;
   margin-right: 8px;
 }
 
@@ -494,7 +494,7 @@ h6 {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
     font-family: var(--nav-font);
-    font-size: 17px;
+    font-size: 24px;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -588,7 +588,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #101C1C;
   font-size: 14px;
   position: relative;
 }
@@ -1765,7 +1765,7 @@ section,
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
-.faq .content h3 {
+/* .faq .content h3 {
   font-weight: 400;
   font-size: 34px;
 }
@@ -1849,7 +1849,7 @@ section,
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
   color: var(--accent-color);
-}
+} */
 
 /*--------------------------------------------------------------
 # Recent Posts Section
